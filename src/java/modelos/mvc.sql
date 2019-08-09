@@ -7,6 +7,9 @@
  * Author:  Instructor
  * Created: 8/08/2019
  */
+go
+drop table usurio
+go
 create table usuario(
     cedula bigint primary key not null,
     nombre varchar(50) not null,
@@ -14,6 +17,11 @@ create table usuario(
     correo varchar(50) not null,
     rol enum('admin','supervisor','user')
 );
-
-
+go
 describe usuario;
+
+insert into usuario values (10010, 'santigo', 'neira', 'Santiagoneira2010@gmail.com', 'admin');
+insert into usuario values (1002736, 'Miguel', 'Avila', 'mi2017avila@gmail.com','user');
+
+select * from usuario where 1;
+go
