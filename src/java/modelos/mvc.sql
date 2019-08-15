@@ -19,7 +19,7 @@ create table usuario(
 describe usuario;
 
 
-select * from usuario where 1;
+INSERT INTO usuario VALUES (1111,'Yuliano','Quiñones','yq@yq.co','admin'),(2222,'Felipe','Aguilera','fa@fa.co','admin');
 
 SELECT * FROM usuario WHERE 1;
 
