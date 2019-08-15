@@ -7,8 +7,6 @@
  * Author:  Instructor
  * Created: 8/08/2019
  */
-drop table usurio
-go
 create table usuario(
     cedula bigint primary key not null,
     nombre varchar(50) not null,
@@ -17,10 +15,12 @@ create table usuario(
     rol enum('admin','supervisor','user')
 );
 
+
 describe usuario;
 
-insert into usuario values (100102, 'santigo', 'Neira', 'Santiagoneira2010@gmail.com', 'admin');
-insert into usuario values (1002736, 'Miguel', 'Avila', 'mi2017avila@gmail.com','user');
 
 select * from usuario where 1;
 
+SELECT * FROM usuario WHERE 1;
+
+ALTER TABLE usuario ADD COLUMN telefono BIGINT NOT NULL AFTER correo;
